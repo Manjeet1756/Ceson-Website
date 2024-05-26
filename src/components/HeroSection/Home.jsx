@@ -60,10 +60,11 @@ const Home = () => {
         <div className="Container2-box2">
           <div className="Container2-box2-sub-box1">
             <p>
-              Welcome to<strong> CESON</strong>, where innovation meets excellence in software
-              solutions and education. Established in <b>2022</b> by Bharani, our
-              company is dedicated to providing cutting-edge software services
-              and empowering individuals through high-quality courses.
+              Welcome to<strong> CESON</strong>, where innovation meets
+              excellence in software solutions and education. Established in{" "}
+              <b>2022</b> by Bharani, our company is dedicated to providing
+              cutting-edge software services and empowering individuals through
+              high-quality courses.
             </p>
             <button> More About Us</button>
           </div>
@@ -124,8 +125,9 @@ const Home = () => {
           </div>
           <div className="Paragrph">
             <p>
-              At <b>CESON</b>, our services are crafted to empower your business and
-              fuel success. We prioritize <b>efficiency, innovation, and customer</b>
+              At <b>CESON</b>, our services are crafted to empower your business
+              and fuel success. We prioritize{" "}
+              <b>efficiency, innovation, and customer</b>
               satisfaction in a comprehensive suite that spans crucial business
               functions, ensuring your journey towards success is seamless and
               effective
@@ -147,7 +149,6 @@ const Home = () => {
 
         <div className="Container5-box2">
           <button>
-          
             <ArrowRightAltIcon style={{ fontSize: "50px" }} />
           </button>
         </div>
@@ -260,7 +261,6 @@ const Home = () => {
           </button>
         </div>
       </Container9>
-   
     </>
   );
 };
@@ -272,6 +272,7 @@ const Container1 = styled.div`
   width: 100%;
   position: relative;
   letter-spacing: 6px;
+  z-index: -1;
   img {
     height: 1000px;
     width: 100%;
@@ -666,7 +667,7 @@ const Container8 = styled.div`
   display: flex;
   flex-direction: column;
   padding: 100px 165px;
-  
+
   position: relative;
   .Container8-box1 {
     height: 200px;
@@ -706,14 +707,14 @@ const Container8 = styled.div`
     }
   }
   .Milestone {
-    padding:150px 0px;
+    padding: 150px 0px;
     position: absolute;
     top: 22%;
     left: -0.7%;
-    width:100%;
+    width: 100%;
   }
   img {
-    width:100%;
+    width: 100%;
     opacity: 0.2;
   }
 `;

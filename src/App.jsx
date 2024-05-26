@@ -15,7 +15,7 @@ const App = () => {
 
     <BrowserRouter>
     <Header className="header"/>
-    <div className="hero-sections">
+   
     <Routes >
       <Route path ="/Home"  element={<Home/>} />
       
@@ -31,8 +31,8 @@ const App = () => {
 
 
     </Routes>
-    <Footer className="footer"/> 
-    </div>
+    <Footer/> 
+   
     </BrowserRouter>
 
   
