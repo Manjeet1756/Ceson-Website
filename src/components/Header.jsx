@@ -25,25 +25,29 @@ const Header = () => {
 
   const Container = styled.div`
     height: 100px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 60px 150px;
+    padding: 0px 150px;
     background-color: ${scrolled ? 'rgba(217, 217, 217, 0.5)': "transparent"};
     position: fixed;
-    top: 0px;
-    left: 0px;
+     z-index:1000;
+    top: 0;
+/* backdrop-filter:blur(28px); */
+    /* left: 0;
+    right:0;
+    bottom:0; */
 
     .img-div {
-      height: 100px;
-      width: 100px;
+     max-height: 75px;
+      max-width: 75px;
+      margin-top:0;
     }
     img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
       filter:brightness(1.2);
 
     }
@@ -72,12 +76,22 @@ const Header = () => {
         }
       }
     }
-    
+
+  @media (max-width:780px) {
+
+         .Container{
+
+          max-width:780px;
+          max-height:60px;
+          padding: 20px;
+
+         }
+  }
 
   `;
 
   return (
-    <Container>
+    <Container className="Container">
       <div className="img-div">
       <Link to="/Home" className="items">
       <img src="final_ceson_logo.png" alt="" />

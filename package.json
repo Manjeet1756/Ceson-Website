@@ -26,7 +26,8 @@
     "react-slider": "^2.0.6",
     "react-tsparticles": "^2.12.2",
     "styled-components": "^6.1.9",
-    "swiper": "^11.1.1"
+    "swiper": "^11.1.1",
+    "tsparticles": "^3.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

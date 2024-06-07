@@ -31,11 +31,11 @@ img{
   width:70px;
 }
 .title{
-  font-size:40px;
+  font-size:30px;
   font-weight:normal;
 }
 .description{
-  font-size:18px;
+  font-size:16px;
 }
 
  

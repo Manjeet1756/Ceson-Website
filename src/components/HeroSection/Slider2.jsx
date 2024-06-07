@@ -1,11 +1,9 @@
-
-
 import React, { useState } from "react";
-import "./Slider.css";
+import "./Slider2.css";
 
 
-const Slider = () => {
-  const [slides, setSlides] = useState([
+const Slider2 = () => {
+  const [slidess, setSlides] = useState([
     "Technology  ",
     "Innovation",
     "Integration",
@@ -24,10 +22,10 @@ const Slider = () => {
   };
 
   return (
-    <div className="slider-container" style={{position:"relative"}}>
-      <div className="slides">
-        {slides.map((slide, index) => (
-          <div key={index} className="slide" style={{ zIndex: slides.length - index }}>
+    <div className="slider-container2" style={{position:"relative"}}>
+      <div className="slides2">
+        {slidess.map((slide, index) => (
+          <div key={index} className="slide2" style={{ zIndex: slidess.length - index }}>
             <div style={{display:"flex",alignItems:"center", gap:"2.5%",height:"60px",width:"300px"}}><h1>{slide}</h1> <img src="ico tech.png" alt="img" style={{height:"45px",width:"45px",objectFit:"cover"}} /></div>
             <p>
               We Propel Tech Advancement Through Bespoke Solutions, Ensuring Seamless
@@ -36,7 +34,7 @@ const Slider = () => {
               Landscape Of Technology. We Are Committed To Delivering Excellence,
               Empowering Our Clients To Thrive In The Ever-Changing World Of Technology.
             </p>
-            <button className="next-btn" onClick={handleNext}>→</button>
+            <button className="next-btn2" onClick={handleNext}>→</button>
           </div>
         ))}
       </div>
@@ -45,4 +43,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default Slider2;
